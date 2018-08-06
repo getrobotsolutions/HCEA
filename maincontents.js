@@ -74,11 +74,11 @@ function FC_ContentsCall(strContentsName, strLanguage)
            location.href = "../../maincontents.htm";
             break;
         case "Api":
-            PlaySpeech(speak[0]);
+            //PlaySpeech(speak[0]);
             location.href = "Contents/Api/index.html";
             break;
         case "Videos":
-            PlaySpeech(speak[1]);
+            //PlaySpeech(speak[1]);
             location.href = "Contents/Video/index.html";
             break;
         case "Slot-machine":
