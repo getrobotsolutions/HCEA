@@ -40,12 +40,7 @@
 </header>
 
 <nav>
-<!--<h2 class="lang-text">Choose a Language</h2>
-    <div class="nav-language">
 
-        <button onclick="LanguageChange('english');" id="btn_english" class="btn-english">English</button>
-        <button onclick="LanguageChange('spanish');" id="btn_spanish" class="btn-spanish">Español</button>
-    </div>-->
 </nav>
 
 <section class="main-content" style="height: 55%">
@@ -173,7 +168,15 @@
     {
         LanguageChange('spanish');
     }
+    function redirectToSS(){
+        window.location.href = "maincontents.htm";
+    }
+    var tempTime=setTimeout(redirectToSS,60000);
 
+    $(document).click(function(event) {
+        clearTimeout( tempTime );
+        tempTime=setTimeout(redirectToSS,240000);
+    });
 </script>
 
 </body>

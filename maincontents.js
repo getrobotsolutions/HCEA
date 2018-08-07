@@ -49,9 +49,9 @@ function LanguageChange(lang)
     }
 
 }
-        speak[0] = "The Vonage API Platform is loved by developers, built for business";
-        speak[1] = "learn about two cloud technologies that should be on your radar";
-        speak[2] = "The Vonage API Platform that is helping you reinvent how you communicate with the world";
+        speak[0] = "Take a look at our robot at some of our previous trade shows";
+        speak[1] = "hear testimonials from trade show clients";
+        speak[2] = "spin the wheel for your chance to win great prizes";
         speak[3] = "Read a welcome message from our dean.";
         speak[4] = "Find out what classes you need for your major.";
         speak[5] = "";
@@ -68,21 +68,21 @@ function FC_ContentsCall(strContentsName, strLanguage)
     switch (strContentsName)
     {
         case "Welcome":
-            PlaySpeech("hi im Vonnie. Thank you for visiting the Vonage booth!");
+            PlaySpeech("Hi, I'm Tracey the trade show robot. I can be rented for trade shows and events. Press a button on my screen to begin");
             break;
         case "Home":
-           location.href = "../../maincontents.htm";
+           location.href = "../../main.htm";
             break;
-        case "Api":
-            //PlaySpeech(speak[0]);
+        case "Projects":
+            PlaySpeech(speak[0]);
             location.href = "Contents/Api/index.html";
             break;
         case "Videos":
-            //PlaySpeech(speak[1]);
+            PlaySpeech(speak[1]);
             location.href = "Contents/Video/index.html";
             break;
         case "Slot-machine":
-            //PlaySpeech(speak[2]);
+            PlaySpeech(speak[2]);
             location.href = "Contents/SlotMachine/index.html";
             break;
         
@@ -173,6 +173,19 @@ function ShowPopup(){
     $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
     $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
     document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="assets/contact.png"/></div></div>';
+}
+function ShowImgPopup(src){
+
+// get the screen height and width
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+    // calculate the values for center alignment
+    var dialogTop =  '30%';//(maskHeight/3) - ($('#dialog-box').height());
+    var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2);
+    // assign values to the overlay and dialog box
+    $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
+    $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
+    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><div id="dialog-message"><img width="800" src="'+src+'"/></div></div>';
 }
 
 $(document).ready(function(){
