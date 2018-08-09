@@ -257,7 +257,7 @@ function SendEmail()
     // 메일 전송에 필요한 정보
     var addr = message;
     //var addr = "paul@robotaisolutions.com";
-    var subject = "Welcome to San Antonio Airport.";
+    var subject = "Selfie on ARS Robot";
     var body = "Email : " + message;
     //var mail_server = "smtp.gmail.com";
     //var mail_addr_sender = "ict.muscatairport@gmail.com";
