@@ -17,12 +17,13 @@ function CheckVal(){
                           location.reload();
                         }
                         else{
-                         
+                          //alert("Reg ID: " + parts[0]);
+                          //alert("First Name: " + parts[1]);
+                          //alert("Last Name: " + parts[2]);
+                          //alert("Company Name:" + parts[3]);
+                          window.external.PlaySpeech("welcome" +firstName + " " + lastName +);                        
                         }
-                      alert("Reg ID: " + parts[0]);
-                      alert("First Name: " + parts[1]);
-                      alert("Last Name: " + parts[2]);
-                      alert("Company Name:" + parts[3]);
+                      
 }
 
              /*$(".wrapper1").hide();
