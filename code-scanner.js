@@ -21,7 +21,7 @@ function CheckVal(){
                           //alert("First Name: " + parts[1]);
                           //alert("Last Name: " + parts[2]);
                           //alert("Company Name:" + parts[3]);
-                          window.external.PlaySpeech("welcome" +firstName + " " + lastName +);                        
+                          window.external.PlaySpeech("welcome" +firstName + " " + lastName);                        
                         }
                       
 }
