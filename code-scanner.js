@@ -7,28 +7,22 @@ function CheckVal(){
                         $(".inst-img").hide();
                       //alert(bar_code.val());
                         var len = bar_code.length;
-                        var parts = bar_code.split("$");
-                        var badgeNumber=parts[0];
-                        var firstName=parts[2];
-                        var lastName=parts[3];
-                        var companyName=parts[4];
-                        if(badgeNumber==null || firstName==null || lastName==null || companyName== null){
+                        var parts = bar_code.split("^");
+                        var regId=parts[0];
+                        var firstName=parts[1];
+                        var lastName=parts[2];
+                        var companyName=parts[3];
+                        if(regId==null || firstName==null || lastName==null || companyName== null){
                           alert("Please Scan badge again");
                           location.reload();
                         }
                         else{
-                          writeCookie("BadgeNumber", badgeNumber, 30);
-                          writeCookie("FirstName", firstName , 30);
-                          writeCookie("LastName", lastName , 30);
-                          writeCookie("CompanyName", companyName  , 30);
-                          $(".badgescanning").hide();
-                          $("#panel2").show();
-                          alert("Badge Number: " + badgeNumber);
+                         
                         }
-                        
-                       // alert("First Name: " + parts[2]);
-                        //alert("Last Name: " + parts[3]);
-                       // alert("Company Name:" + parts[4]);
+                      alert("Reg ID: " + parts[0]);
+                      alert("First Name: " + parts[1]);
+                      alert("Last Name: " + parts[2]);
+                      alert("Company Name:" + parts[3]);
 }
 
              /*$(".wrapper1").hide();
@@ -69,6 +63,7 @@ function CheckVal(){
                   //    console.log(bar_code);
                       
                     if(bar_code.length>0){
+                      CheckVal();
                       alert(bar_code);
                         
                         location.href = "main.htm";
