@@ -50,7 +50,10 @@
 <section class="main-content">
    <div class="bmg">
             <div class="wrap" >
-               <iframe src="https://www.vonage.com/business/api/?icmp=BMM_D_apis" width="1080" height="1120"></iframe>
+               <img src="images/1c.jpg" name="pic1" width="1080">
+               <div class="slider-nav">
+                <a href="#" class="" onclick="change(-1)"><img src="images/previous.png"></a>|<a href="#" class="" onclick="change(1)"><img src="images/next.png"></a>
+                </div>
                         
               </div>
       </div>
@@ -122,7 +125,26 @@
 <script language="JavaScript" type="text/javascript" src="../Common/Scripts/common-inner.js"></script>
 
 <script language="javascript" type="text/javascript">
-    window.history.forward();
+  window.history.forward();
+  var i=1,j=0;
+  function change(j){
+        i=i+j;
+        if(i>14){
+          //GoHome();
+          //window.external.SetVolume(0.9);
+          var lang = "en-us";
+          var chlang = "En";
+          var g_language = chlang;
+          //window.external.ChangeLanguage(lang);
+          //window.external.PlaySpeech('Thank you, would you like to learn more?');
+          i=1;
+        }
+
+        if(i<=0){
+          i=14;
+        }
+        document.pic1.src="images/" + i + "c.jpg";    
+    }
 </script>
 
 

@@ -75,14 +75,14 @@ function FC_ContentsCall(strContentsName, strLanguage)
             break;
         case "Projects":
             PlaySpeech(speak[0]);
-            location.href = "Contents/Api/index.html";
+            location.href = "Contents/Projects/index.html";
             break;
         case "Videos":
             PlaySpeech(speak[1]);
             location.href = "Contents/Video/index.html";
             break;
         case "Slot-machine":
-            PlaySpeech(speak[2]);
+            //PlaySpeech(speak[2]);
             location.href = "Contents/SlotMachine/index.html";
             break;
         
