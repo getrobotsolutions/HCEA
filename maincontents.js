@@ -1,54 +1,6 @@
 ﻿var speak = new Array( );
 
 
-function LanguageChange(lang)
-{
-    if(lang === "english")
-    {
-        window.external.ChangeLanguage("en-us");
-        eraseCookie("CurrentLanguage");
-        writeCookie("CurrentLanguage", "English", 30);
-        document.getElementById("btn_english").style.backgroundColor = "#ffffff";
-        document.getElementById("btn_english").style.color = "#FF6600";
-        document.getElementById("btn_spanish").style.backgroundColor = "#FF6600";
-        document.getElementById("btn_spanish").style.color = "#ffffff";
-
-        
-        // document.getElementById("vote-title").innerHTML = "Vote for who will win?";
-
-        speak[0] = "Learn about our great healthcare offerings";
-        speak[1] = "Find your way around the terminal.";
-        speak[2] = "Here are some ways to get you where you want to go!";
-        speak[3] = "Enjoy some food at our restaurants.";
-        speak[4] = "Take some time to shop at our great stores.";
-        speak[5] = "Find out more features our airport offers.";
-        speak[6] = "Press the button on my screen and strike a pose!";
-        speak[7] = "Say Cheese! You are about to become a robot.";
-        speak[8] = "Click a Song Below to Make the Robot Dance";
-        
-
-    }
-    else if (lang === "spanish")
-    {
-        /*window.external.ChangeLanguage("es-us");
-        eraseCookie("CurrentLanguage");
-        writeCookie("CurrentLanguage", "Spanish", 30);
-        document.getElementById("btn_english").style.backgroundColor = "#FF6600";
-        document.getElementById("btn_english").style.color = "#ffffff";
-        document.getElementById("btn_spanish").style.backgroundColor = "#ffffff";
-        document.getElementById("btn_spanish").style.color = "#FF6600";
-
-        
-        // document.getElementById("vote-title").innerHTML = "Vote por quién ganará?";
-
-
-        speak[0] = "Disfruta de tu tiempo en algunos de nuestros excelentes restaurantes.";
-        speak[1] = "Pase tiempo en algunas de nuestras tiendas.";
-        speak[2] = "Toca el icono de la cámara a continuación y ¡Di queso!";
-        speak[3] = "Sonríe, estás a punto de convertirte en un robot.";*/
-    }
-
-}
         speak[0] = "Take a look at our robot at some of our previous trade shows";
         speak[1] = "hear testimonials from trade show clients";
         speak[2] = "spin the wheel for your chance to win great prizes";
@@ -108,55 +60,10 @@ function FC_ContentsCall(strContentsName, strLanguage)
 } // end FC_ContentsCall
 
 
-function votePress(team) {
-    var i;
-    switch (team)
-    {
-        case "t1":
-            if(readCookie("team1")=== null)
-            {i = 0;}
-                i = readCookie("team1");
-                i++;
-                writeCookie("team1", i.toString(), 30);
-                document.getElementById("t1-vote").innerHTML = i.toString();
-            break;
-        case "t2":
-            if(readCookie("team2")=== null)
-            {i = 0;}
-            i = readCookie("team2");
-            i++;
-            writeCookie("team2", i.toString(), 30);
-            document.getElementById("t2-vote").innerHTML = i.toString();
-            break;
-        case "t3":
-            if(readCookie("team3")=== null)
-            {i = 0;}
-            i = readCookie("team3");
-            i++;
-            writeCookie("team3", i.toString(), 30);
-            document.getElementById("t3-vote").innerHTML = i.toString();
-            break;
-        case "t4":
-            if(readCookie("team4")=== null)
-            {i = 0;}
-            i = readCookie("team4");
-            i++;
-            writeCookie("team4", i.toString(), 30);
-            document.getElementById("t4-vote").innerHTML = i.toString();
-            break;
-    } // end switch
-} // end votepress()
-
-function voteInit() {
-    document.getElementById("t1-vote").innerHTML = readCookie("team1").toString();
-    document.getElementById("t2-vote").innerHTML = readCookie("team2").toString();
-    document.getElementById("t3-vote").innerHTML = readCookie("team3").toString();
-    document.getElementById("t4-vote").innerHTML = readCookie("team4").toString();
-}
 
 function OnUserApproached()
 {
-    PlaySpeech("Hello, welcome to the BWl Airport. Please press a button on my screen to begin.");
+    PlaySpeech("Hello, welcome to the event. Please press a button on my screen to begin.");
 }
 
 
@@ -189,8 +96,6 @@ function ShowImgPopup(src){
 }
 
 $(document).ready(function(){
-
-
 
     $('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {
         $('#dialog-overlay, #dialog-box').hide();
@@ -229,8 +134,6 @@ setTimeout(function () {
 
         console.log("Weather Showed");
     });
-
-
 
 }, 2000);
 

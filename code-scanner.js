@@ -69,6 +69,7 @@ function CheckVal(){
                   //    console.log(bar_code);
                       
                     if(bar_code.length>0){
+                      alert(bar_code);
                         
                         location.href = "main.htm";
 
