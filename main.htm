@@ -63,7 +63,7 @@
                 </td>
                 <td>
                     <button onclick="FC_ContentsCall('Slot-machine')" class="r0c1">
-                    <img src="assets/icons/slot-machine-with-sevens.png"><br>
+                    <img src="assets/icons/casino-roulette.png"><br>
                         <a id="txt_shopping" style="">PRIZE WHEEL</a>
                     </button>
                 </td>
@@ -177,6 +177,15 @@
         clearTimeout( tempTime );
         tempTime=setTimeout(redirectToSS,240000);
     });
+  function OnJoystickControlled(strPara){
+    var btn_info = strPara.split(',')[4];
+
+
+    if(btn_info[0] == '1'){
+            location.href="maincontents.htm"
+          
+    }
+  }
 </script>
 
 </body>

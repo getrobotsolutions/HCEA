@@ -209,9 +209,9 @@ function OnJoystickControlled(strPara){
             window.external.PlaySpeech("Nice to meet you");
     }
     if(btn_info[3] == '1'){
-       window.external.ChangeLanguage("en-us");
-            SetVolume(1);
-            window.external.PlaySpeech("Hello Andreas and Scott, nice to meet you! Thanks for letting me visit.");
+        window.external.ChangeLanguage("en-us");
+        SetVolume(1);
+        window.external.PlaySpeech("Hello Andreas and Scott, nice to meet you! Thanks for letting me visit.");
         
     }
 }
