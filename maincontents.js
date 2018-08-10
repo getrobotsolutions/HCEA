@@ -54,6 +54,9 @@ function FC_ContentsCall(strContentsName, strLanguage)
         case "Config":
             location.href = "Config/Config.htm";
             break;
+        case "maincontents":
+            location.href = "maincontents.htm";
+            break;
         default:
             break;
     } // end switch(strContentsName)

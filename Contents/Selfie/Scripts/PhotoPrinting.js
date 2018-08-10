@@ -265,7 +265,7 @@ function SendEmail()
     //var port = 587;
     //var ssl = "true";
     var mail_server = "mail.getrobotsolutions.com";
-    var mail_addr_sender = "selfie_sat@getrobotsolutions.com";
+    var mail_addr_sender = "selfie@getrobotsolutions.com";
     var pswd = "R0b0ts60";
     var port = 587;
     var ssl = "false";

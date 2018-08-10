@@ -39,10 +39,10 @@ function CheckVal(){
                   console.log(data);
                   if(data.response=='error'){
                     alert("Welcome back");
-                    window.external.PlaySpeech("welcome back" +firstName + " " + lastName);
+                    window.external.PlaySpeech("welcome back" +firstName + " " + lastName +"to the CDS booth");
 
                   }
-                  window.external.PlaySpeech("welcome" +firstName + " " + lastName);
+                  window.external.PlaySpeech("welcome" +firstName + " " + lastName +"to the CDS booth");
                 }
             });
   }      
@@ -79,7 +79,7 @@ function CheckVal(){
                  
                     setTimeout(function() {
                       $('#submit').trigger('click');
-                      }, 3000);
+                      }, 5000);
 
                  
         });
