@@ -34,7 +34,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
             location.href = "Contents/Video/index.html";
             break;
         case "Slot-machine":
-            //PlaySpeech(speak[2]);
+            PlaySpeech(speak[2]);
             location.href = "Contents/SlotMachine/index.html";
             break;
         

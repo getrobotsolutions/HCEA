@@ -100,7 +100,16 @@
             color = d3.scale.category20();//category20c()
             //randomNumbers = getRandomNumbers();
         //http://osric.com/bingo-card-generator/?title=HTML+and+CSS+BINGO!&words=padding%2Cfont-family%2Ccolor%2Cfont-weight%2Cfont-size%2Cbackground-color%2Cnesting%2Cbottom%2Csans-serif%2Cperiod%2Cpound+sign%2C%EF%B9%A4body%EF%B9%A5%2C%EF%B9%A4ul%EF%B9%A5%2C%EF%B9%A4h1%EF%B9%A5%2Cmargin%2C%3C++%3E%2C{+}%2C%EF%B9%A4p%EF%B9%A5%2C%EF%B9%A4!DOCTYPE+html%EF%B9%A5%2C%EF%B9%A4head%EF%B9%A5%2Ccolon%2C%EF%B9%A4style%EF%B9%A5%2C.html%2CHTML%2CCSS%2CJavaScript%2Cborder&freespace=true&freespaceValue=Web+Design+Master&freespaceRandom=false&width=5&height=5&number=35#results
-        var quantity=[1,2,3,4,7,6,7,15,20,30,100];
+        var quantity;
+        
+        if(readCookie("quantity"=="")){
+            var quantity=[1,2,3,4,7,6,7,15,20,30,100];
+            writeCookie("CurrentLanguage", quantity, 30);
+        }
+        else{
+            quantity=readCookie("quantity");
+        }
+        
         function checkQuantity(){
             for (var i = 0; i < quantity.length;  i++) {
                // alert(quantity[i]);
