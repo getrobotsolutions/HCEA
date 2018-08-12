@@ -78,9 +78,9 @@ function CheckVal(){
 
                     }
                     else{
-                      $("#bar_code").val('');
-                      //alert("Please put the Barcode scanner on the right position and try again.");
-                      //location.reload();
+                      //$("#bar_code").val('');
+                      alert("Please put the Barcode scanner on the right position and try again.");
+                      location.reload();
                     }
                                          
                   });
