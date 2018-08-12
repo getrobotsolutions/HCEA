@@ -14,7 +14,7 @@ function CheckVal(){
                           location.reload();
   }
   else{
-                      window.external.PlaySpeech("welcome" +firstName + " " + lastName +"to the CDS booth"); 
+                      window.external.PlaySpeech("welcome" +firstName + " " + lastName +", welcome to our booth."); 
                         /*alert("Reg ID: " + parts[0]);
                         alert("First Name: " + parts[1]);
                         alert("Last Name: " + parts[2]);
