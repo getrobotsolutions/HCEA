@@ -196,25 +196,25 @@ function OnJoystickControlled(strPara){
     if(btn_info[0] == '1'){
             window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Hi Brenda, I'm Vonnie");//I'm here to assist you, press any button on my screen to begin");
+            window.external.PlaySpeech("Yay! Yay! Yay… We have a winner!");//I'm here to assist you, press any button on my screen to begin");
           
     }
 
     if(btn_info[1] == '1'){
         window.external.ChangeLanguage("en-us");
         SetVolume(1);
-        window.external.PlaySpeech("Hi!");
+        window.external.PlaySpeech("Winner , winner, chicken dinner!");
         
     }
     if(btn_info[2] == '1'){
         window.external.ChangeLanguage("en-us");
             SetVolume(1);
-            window.external.PlaySpeech("Nice to meet you");
+            window.external.PlaySpeech("I like you, you are cool.  Would you like to rent me? ");
     }
     if(btn_info[3] == '1'){
         window.external.ChangeLanguage("en-us");
         SetVolume(1);
-        window.external.PlaySpeech("Hello Andreas and Scott, nice to meet you! Thanks for letting me visit.");
+        window.external.PlaySpeech("Ha, ha.  That tickles.  Good luck on winning a great prize.");
         
     }
 }
