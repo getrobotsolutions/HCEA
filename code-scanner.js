@@ -67,7 +67,7 @@ function CheckVal(){
                     
                     if(bar_code.length>0){
                       if(bar_code.length>35){
-                        $("#bar_code").val('');
+                        //$("#bar_code").val('');
                       }
                       else{  
                         CheckVal();
