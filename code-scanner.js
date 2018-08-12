@@ -38,7 +38,7 @@ function CheckVal(){
                 success: function(data) {
                   console.log(data);
                   if(data.response=='error'){
-                    alert("Welcome back");
+                    //alert("Welcome back");
                     window.external.PlaySpeech("welcome back" +firstName + " " + lastName +"to the CDS booth");
 
                   }
@@ -64,22 +64,30 @@ function CheckVal(){
                      
                       var bar_code = $("#bar_code").val(); 
                   //    console.log(bar_code);
-                      
+                    
                     if(bar_code.length>0){
-                      CheckVal();
-                      //alert(bar_code);  
+                      if(bar_code.length>35){
+                        $("#bar_code").val('');
+                      }
+                      else{  
+                        CheckVal();
+                        //alert(bar_code);
+                        //alert(bar_code.length); 
                         location.href = "main.htm";
+                      }
 
-                    }   
+                    }
                     else{
+                      $("#bar_code").val('');
                       //alert("Please put the Barcode scanner on the right position and try again.");
                       //location.reload();
-                    }                     
+                    }
+                                         
                   });
-                 
+                  
                     setTimeout(function() {
                       $('#submit').trigger('click');
-                      }, 5000);
+                      }, 3000);
 
                  
         });
