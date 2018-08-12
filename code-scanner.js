@@ -14,7 +14,7 @@ function CheckVal(){
                           location.reload();
   }
   else{
-                      //window.external.PlaySpeech("welcome" +firstName + " " + lastName); 
+                      window.external.PlaySpeech("welcome" +firstName + " " + lastName +"to the CDS booth"); 
                         /*alert("Reg ID: " + parts[0]);
                         alert("First Name: " + parts[1]);
                         alert("Last Name: " + parts[2]);
@@ -39,10 +39,10 @@ function CheckVal(){
                   console.log(data);
                   if(data.response=='error'){
                     //alert("Welcome back");
-                    window.external.PlaySpeech("welcome back" +firstName + " " + lastName +"to the CDS booth");
+                    //window.external.PlaySpeech("welcome back" +firstName + " " + lastName +"to the CDS booth");
 
                   }
-                  window.external.PlaySpeech("welcome" +firstName + " " + lastName +"to the CDS booth");
+                  //window.external.PlaySpeech("welcome" +firstName + " " + lastName +"to the CDS booth");
                 }
             });
   }      
