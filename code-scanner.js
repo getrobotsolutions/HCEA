@@ -87,3 +87,33 @@ function CheckVal(){
 
                  
         });
+
+  function OnJoystickControlled(strPara){
+    var btn_info = strPara.split(',')[4];
+
+
+    if(btn_info[0] == '1'){
+            window.external.ChangeLanguage("en-us");
+            SetVolume(1);
+            window.external.PlaySpeech("Yay! Yay! Yay… We have a winner!");//I'm here to assist you, press any button on my screen to begin");
+          
+    }
+
+    if(btn_info[1] == '1'){
+        window.external.ChangeLanguage("en-us");
+        SetVolume(1);
+        window.external.PlaySpeech("Winner , winner, chicken dinner!");
+        
+    }
+    if(btn_info[2] == '1'){
+        window.external.ChangeLanguage("en-us");
+            SetVolume(1);
+            window.external.PlaySpeech("I like you, you are cool.  Would you like to rent me? ");
+    }
+    if(btn_info[3] == '1'){
+        window.external.ChangeLanguage("en-us");
+        SetVolume(1);
+        window.external.PlaySpeech("Ha, ha.  That tickles.  Good luck on winning a great prize.");
+        
+    }
+}
