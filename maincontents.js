@@ -23,7 +23,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
             PlaySpeech("Hi, I'm Tracey the trade show robot. I can be rented for trade shows and events. Press a button on my screen to begin");
             break;
         case "Home":
-           location.href = "../../main.htm";
+           location.href = "../../maincontents.htm";
             break;
         case "Projects":
             PlaySpeech(speak[0]);
@@ -55,7 +55,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
             location.href = "Config/Config.htm";
             break;
         case "maincontents":
-            location.href = "maincontents.htm";
+            location.href = "main.htm";
             break;
         default:
             break;

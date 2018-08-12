@@ -55,7 +55,7 @@ function CheckVal(){
   $(document).ready(function() {
       $("#bar_code").focus();
       $(".second-block").click(function(){
-        location.href = "main.htm";
+        location.href = "maincontents.htm";
       });
   });
   $( function() {
@@ -70,7 +70,7 @@ function CheckVal(){
                         CheckVal();
                         //alert(bar_code);
                         //alert(bar_code.length); 
-                        location.href = "main.htm";
+                        location.href = "maincontents.htm";
 
                     }
                     else{
