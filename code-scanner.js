@@ -66,15 +66,11 @@ function CheckVal(){
                   //    console.log(bar_code);
                     
                     if(bar_code.length>0){
-                      if(bar_code.length>35){
-                        //$("#bar_code").val('');
-                      }
-                      else{  
+                       
                         CheckVal();
                         //alert(bar_code);
                         //alert(bar_code.length); 
                         location.href = "main.htm";
-                      }
 
                     }
                     else{
