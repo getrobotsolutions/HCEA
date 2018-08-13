@@ -76,7 +76,7 @@ function CheckVal(){
                     else{
                       window.setTimeout(function() {
                             var bar_code = $("#bar_code").val();
-                            //CheckBal(bar_code);
+                            CheckVal(bar_code);
                         }, 2000);
                     }
                                          
