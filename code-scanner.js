@@ -77,14 +77,14 @@ function CheckVal(){
                       window.setTimeout(function() {
                             var bar_code = $("#bar_code").val();
                             CheckVal(bar_code);
-                        }, 2000);
+                        }, 5000);
                     }
                                          
                   });
                   
                     setTimeout(function() {
                       $('#submit').trigger('click');
-                      }, 2000);
+                      }, 5000);
 
                  
         });
