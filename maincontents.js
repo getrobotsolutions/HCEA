@@ -203,7 +203,7 @@ function OnJoystickControlled(strPara){
     if(btn_info[1] == '1'){
         window.external.ChangeLanguage("en-us");
         SetVolume(1);
-        window.external.PlaySpeech("Winner , winner, chicken dinner!");
+        window.external.PlaySpeech("Hi, I'm Tracey the tradeshow robot.  I can be rented for tradeshow and events.  Press a button on my screen to begin.");
         
     }
     if(btn_info[2] == '1'){
