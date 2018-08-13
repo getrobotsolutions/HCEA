@@ -48,7 +48,7 @@ function CheckVal(){
   }      
 }
   $(function () {
-    $('#code-scan').codeScanner();
+    $('#bar_code').codeScanner();
     var bar_code = $("#bar_code"); 
     
 });              
