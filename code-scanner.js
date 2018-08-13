@@ -74,16 +74,17 @@ function CheckVal(){
 
                     }
                     else{
-                      //$("#bar_code").val('');
-                      alert("Please put the Barcode scanner on the right position and try again.");
-                      location.reload();
+                      window.setTimeout(function() {
+                            var bar_code = $("#bar_code").val();
+                            //CheckBal(bar_code);
+                        }, 2000);
                     }
                                          
                   });
                   
                     setTimeout(function() {
                       $('#submit').trigger('click');
-                      }, 3000);
+                      }, 2000);
 
                  
         });
