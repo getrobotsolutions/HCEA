@@ -12,8 +12,8 @@ function CheckVal(){
     location.reload();
   }
   else{
-      //window.external.PlaySpeech("welcome" +firstName + " " + lastName +", welcome to our booth."); 
-                        
+        window.external.PlaySpeech("welcome" +firstName + " " + lastName +", welcome to our booth."); 
+        location.href = "maincontents.htm";             
             /*var dataString =  { 'RegId' : regId, 'FirstName' : firstName,  'LastName' : lastName, 'CompanyName' : companyName};
             $.ajax({
               url:"https://robotaisolutions.com/amgen/hceaApi.php",
@@ -60,7 +60,7 @@ $(document).ready(function() {
                     
       CheckVal();
                          
-      location.href = "maincontents.htm";
+      
 
     }
     else{
