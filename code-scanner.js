@@ -64,10 +64,10 @@ $(document).ready(function() {
 
     }
     else{
-      window.setTimeout(function() {
+      /*window.setTimeout(function() {
         var bar_code = $("#bar_code").val();
         //CheckVal(bar_code);
-      }, 5000);
+      }, 5000);*/
     }
                                          
   });
